@@ -3,7 +3,13 @@
     "actions": [
         { "name": "moveDown", "frames": [0, 1, 2, 3], "duration": 500 },
         { "name": "waitDown", "frames": [1], "duration": 10000 },
-        { "name": "moveRight", "frames": [4, 5, 6, 7], "duration": 500 }
+        { "name": "moveRight", "frames": [4, 5, 6, 7], "duration": 500 },
+        { "name": "waitRight", "frames": [7], "duration": 10000 },
+        { "name": "moveLeft", "frames": [8, 9, 10, 11], "duration": 500 },
+        { "name": "waitLeft", "frames": [10], "duration": 10000 },
+        { "name": "moveUp", "frames": [12, 13, 14, 15], "duration": 500 },
+        { "name": "waitUp", "frames": [15], "duration": 10000 }
+
     ],
     "frames": [
         { "id": 0, "x": 0, "y": 0, "width": 460, "height": 575 },
@@ -13,6 +19,14 @@
         { "id": 4, "x": 0, "y": 600, "width": 460, "height": 575 },
         { "id": 5, "x": 460, "y": 600, "width": 460, "height": 575 },
         { "id": 6, "x": 920, "y": 600, "width": 460, "height": 575 },
-        { "id": 7, "x": 1380, "y": 600, "width": 460, "height": 575 }
+        { "id": 7, "x": 1380, "y": 600, "width": 460, "height": 575 },
+        { "id": 8, "x": 1380, "y": 1200, "width": 460, "height": 575 },
+        { "id": 9, "x": 920, "y": 1200, "width": 460, "height": 575 },
+        { "id": 10, "x": 460, "y": 1200, "width": 460, "height": 575 },
+        { "id": 11, "x": 0, "y": 1200, "width": 460, "height": 575 },
+        { "id": 12, "x": 0, "y": 1800, "width": 460, "height": 575 },
+        { "id": 13, "x": 460, "y": 1800, "width": 460, "height": 575 },
+        { "id": 14, "x": 920, "y": 1800, "width": 460, "height": 575 },
+        { "id": 15, "x": 1380, "y": 1800, "width": 460, "height": 575 }
     ]
 }

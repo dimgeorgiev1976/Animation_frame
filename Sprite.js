@@ -18,6 +18,7 @@ class Sprite {
     }
 
     get cooldown () {
+        // если прошло достатачно време,  что бъй наш фрейм обновился
         return this.action.duration / this.action.frames.length
     }
 
@@ -26,20 +27,21 @@ class Sprite {
     }
 
     get frame () {
-        return this.atlas.frames.find(frame => frame.id === this.frameId)
+        return this.atlas.frames.find(frame => frame.id === this.frameId )
     }
 
     tick (dTimestamp) {
         this.timer += dTimestamp
 
         if (this.timer >= this.cooldown) {
+            // будет сбрасаваться, только сколько етой cooldown
             this.timer -= this.cooldown
-
-            this.frameOrder = (this.frameOrder + 1) % this.action.frames.length
+            // Ордер увеличиваться на 1 но не больше чем количества
+            this.frameOrder = (this.frameOrder + 1 ) % this.action.frames.length
         }
     }
 
-    draw (context) {
+    draw (context ) {
         context.drawImage(
             this.image,
             this.frame.x,
