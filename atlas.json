@@ -1,0 +1,18 @@
+{
+    "image": "spritesheet.png",
+    "actions": [
+        { "name": "moveDown", "frames": [0, 1, 2, 3], "duration": 500 },
+        { "name": "waitDown", "frames": [1], "duration": 10000 },
+        { "name": "moveRight", "frames": [4, 5, 6, 7], "duration": 500 }
+    ],
+    "frames": [
+        { "id": 0, "x": 0, "y": 0, "width": 460, "height": 575 },
+        { "id": 1, "x": 460, "y": 0, "width": 460, "height": 575 },
+        { "id": 2, "x": 920, "y": 0, "width": 460, "height": 575 },
+        { "id": 3, "x": 1380, "y": 0, "width": 460, "height": 575 },
+        { "id": 4, "x": 0, "y": 600, "width": 460, "height": 575 },
+        { "id": 5, "x": 460, "y": 600, "width": 460, "height": 575 },
+        { "id": 6, "x": 920, "y": 600, "width": 460, "height": 575 },
+        { "id": 7, "x": 1380, "y": 600, "width": 460, "height": 575 }
+    ]
+}
