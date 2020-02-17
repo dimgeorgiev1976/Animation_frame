@@ -1,9 +1,10 @@
 class Sprite {
     constructor (image, atlas, actionName) {
+
         this.image = image
         this.atlas = atlas
         this.actionName = actionName
-
+     
         this.frameOrder = 0
         this.timer = 0
 
@@ -18,14 +19,14 @@ class Sprite {
     }
 
     get cooldown () {
-        // если прошло достатачно време,  что бъй наш фрейм обновился
+        // если прошло достатачно време, что бъй наш фрейм обновился
         return this.action.duration / this.action.frames.length
     }
 
     get frameId () {
         return this.action.frames[this.frameOrder]
     }
-
+    // Получаем id тот frame каторой нужен
     get frame () {
         return this.atlas.frames.find(frame => frame.id === this.frameId )
     }
@@ -54,4 +55,5 @@ class Sprite {
             this.height
         )
     }
+
 }
